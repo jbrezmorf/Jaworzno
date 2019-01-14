@@ -1,0 +1,39 @@
+Data:
+Jsou tam vzorky stromů a podzemní vody, jejich souřadnice x a y, u stromů dále druh a obvod kmenu (odpovídá stáří stromu). 
+Ke všem vzorkům je 6 analytických parametrů, resp. 5 a suma těch pěti.
+
+Otazky Pavel:
+
+- existuje vztah mezi parametry ve vodě a ve stromě? (předpokládám, že ano)
+- je tento vztah druhově specifický? (jiný u břízy a u borovice?)
+- je tento vztah jiný u jednotlivých parametrů? (např. b-HCH a d-HCH)
+- hraje v tomto vztahu také roli stáří stromu? (jeho obvod?)
+
+Otazky Honza:
+- co jsou zac ty analyty, maji nejaky vztah?
+
+TODO:
+    Import do Pandas
+    Scatter color plot xy pro jednotlive druhy stromu a jednotlive analyty. 
+        - Odhadnuti mozneho vztahu.
+        - Rozptyl v parameterch vody, moznost interpolace
+    Vypocet interpolovanych analytu vody pro kazdy strom.
+    
+    Pro jednotlive druhy a jednotlive analyty graf X osa parametr ve vode, Y osa parametr ve stromu
+    Druhy stromu odlisit barvou. (10 druhu, maly vzorek pro oak and red oak, uplne malo: 1xash, 2xlinden, 1xmaple, 3xforest pine)
+    
+    Testovat analyzu rozptylu, provnani ruzne slozitych modelu.
+    
+    analyt_strom = a_(druh,analyt stari) + b_(druh, analyt, stari)*analyt_voda
+    
+    vs. jednodussi modely bez zavislosti a,b na nekterych parameterch
+    
+    analyt_strom = a_(druh,analyt stari) + b_(druh, analyt, stari)*analyt_voda
+    
+    
+==============
+- kontrolni stromy u reky 
+- provest interpolaci koncentraci ve vode < hranice nulove koncentrace, 
+- body rek 
+- odhad kolik vody musel strom nasat aby dosahl namerene hodnoty
+    
